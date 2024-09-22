@@ -1,0 +1,54 @@
+.admin {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin .adbox {
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; 
+    padding: 2rem;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.admin .adbox .airport-btn,
+.admin .adbox .route-btn,
+.admin .adbox .user-btn {
+    width: 5rem;
+    height: 2rem;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.admin .adbox .airport-btn:hover,
+.admin .adbox .route-btn:hover,
+.admin .adbox .user-btn:hover {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.admin .adbox .airport-btn:active,
+.admin .adbox .route-btn:active,
+.admin .adbox .user-btn:active {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    cursor: pointer;
+    transform: translateY(1px);
+}

@@ -1,0 +1,103 @@
+/* Center the container in the middle of the page */
+#payment-wrapper {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure container takes up full viewport height */
+  background-color: #f0f0f0;
+  margin: 0; /* Remove default margin */
+}
+
+#payment-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px; /* Add margin around the box */
+  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+/* Adjust header styles */
+#payment-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Added color to match the earlier style */
+}
+
+/* Adjust input group styles */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+/* Style individual payment details */
+.payment-detail {
+  margin-bottom: 15px;
+}
+
+.payment-detail label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.payment-detail input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the payment button */
+#submit_btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Center the button horizontally */
+}
+
+#submit_btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for screens 360px or smaller */
+@media only screen and (max-width: 360px) {
+  #payment-form {
+    padding: 10px;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 10px; /* Reduce margin for small screens */
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  #submit_btn {
+    font-size: 14px;
+  }
+}

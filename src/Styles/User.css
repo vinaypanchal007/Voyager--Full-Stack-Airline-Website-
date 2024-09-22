@@ -1,0 +1,79 @@
+.user-crud {
+    margin: 0;
+    padding-top: 4rem;
+}
+
+.user-crud .user-box {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-crud .user-box input {
+    height: 2rem;
+    width: 100%; 
+    margin: 10px 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.user-crud .user-box .submit-button {
+    width: 100%; /* Make button responsive */
+    max-width: 15rem; /* Limit maximum width */
+    height: 2.5rem; /* Adjust height for better alignment */
+    margin: 10px 0;
+}
+
+.user-crud .user-table {
+    width: 100%; /* Make table responsive */
+    border-collapse: collapse;
+    margin: 2rem 0; /* Add some margin for spacing */
+    border: 2px solid black; /* Add border to the whole table */
+}
+
+.user-crud .user-table thead {
+    background-color: #f2f2f2; /* Light background for header */
+}
+
+.user-crud .user-table th, .user-crud .user-table td {
+    border: 1px solid black; /* Border for each cell */
+    padding: 8px;
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+}
+
+.user-crud .user-table .user-head th {
+    text-align: center;
+}
+
+.user-crud .user-table tbody tr {
+    border-bottom: 1px solid black;
+}
+
+.user-crud .user-table tbody tr:last-child {
+    border-bottom: none; /* Remove bottom border from last row */
+}
+
+@media (max-width: 768px) {
+    .user-crud .user-box input, .user-crud .user-box .submit-button {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .user-crud .user-table th, .user-crud .user-table td {
+        padding: 6px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .user-crud .user-box input, .user-crud .user-box .submit-button {
+        width: 100%; /* Make inputs and buttons full width on very small screens */
+        max-width: none; /* Remove max-width to fit container */
+    }
+
+    .user-crud .user-table th, .user-crud .user-table td {
+        font-size: 0.8rem; /* Adjust font size for very small screens */
+        padding: 4px; /* Adjust padding for very small screens */
+    }
+}

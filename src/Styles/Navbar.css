@@ -1,0 +1,197 @@
+:root {
+    --mainColor: rgb(0, 0, 0);
+    --mainColorLight: #5767aa;
+    --secondaryColor: rgb(255, 0, 0);
+    --textColor: #ffffff;
+}
+
+header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 2px 2px black;
+}
+
+header .aura a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+header .aura a .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: auto;
+}
+
+header .aura a h4 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+    font-family: 'Playwrite Is', sans-serif;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+header div,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .logout {
+    font-size: 1rem;
+}
+
+nav .btn-logic,
+nav .login-link {
+    width: 7rem; /* Fixed width for consistency */
+    height: 3rem; /* Fixed height */
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Playwrite Is', sans-serif; /* Font style */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 0;
+}
+
+nav .login-link {
+    background-color: var(--secondaryColor); /* Red background */
+    color: var(--textColor);
+}
+
+/* Specific styles for logout button */
+nav .logout {
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    border: none;
+}
+
+nav .login-link:hover,
+nav .btn-logic:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: var(--textColor);
+}
+
+header .nav-btn.nav-close-btn {
+    margin-right: 10px;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+    }
+
+    header .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    nav .nav-close-btn {
+        margin-right: 10px;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Query for Mobile Adaptive Screen */
+@media only screen and (max-width: 360px) {
+    header {
+        height: auto;
+        width: 360px;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    header .aura a .logo {
+        height: 3rem;
+    }
+
+    header .aura a h4 {
+        font-size: 1.2rem;
+    }
+
+    header .nav-btn {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    header nav {
+        top: 0;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header .responsive_nav {
+        left: 0;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    nav .nav-close-btn {
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+}

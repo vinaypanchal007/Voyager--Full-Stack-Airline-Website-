@@ -1,0 +1,460 @@
+.book {
+  margin: 0;
+  padding-top: 6rem;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.book .box {
+  margin-bottom: 1rem;
+  background: white;
+  width: 80%;
+  max-width: 1200px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.book .box .note {
+  font-size: 12px;
+}
+
+.book .box .date {
+  margin: 0;
+}
+
+.book .box .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.book .box .frombox .Finput,
+.book .box .tobox .Tinput,
+.book .box .Dtime .date-select {
+  border: none;
+  height: 40px;
+  width: 30rem; /* Adjust width as needed */
+  color: black;
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid black;
+}
+
+.book .box .arrow-img {
+  height: auto;
+  width: auto;
+  border: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.book .box .arrow-img:hover {
+  background-color: gray;
+  color: white;
+}
+
+.book .box .arrow-img:active {
+  transform: translateY(1px);
+}
+
+.book .box .arrow-img .icon {
+  color: black;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book .box .frombox .Finput:focus,
+.book .box .tobox .Tinput:focus,
+.book .box .Dtime .date-select:focus {
+  outline: none;
+}
+
+.book .box .trip-select {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.book .box .trip-select select {
+  width: 9rem;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(220, 220, 220);
+  color: black;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to trip type select */
+}
+
+.book .box .trip-select select:focus,
+.book .box .trip-select select:active {
+  outline: none;
+}
+
+.book .box .date .Dtime {
+  display: flex;
+  align-items: center;
+}
+
+.book .box .date .Dtime .date-select {
+  height: 40px;
+  width: 100%; /* Adjust width as needed */
+}
+
+.book .box .date .Dtime .date-select:first-child {
+  margin-right: 1rem; /* Add space after departure date input */
+}
+
+.book .box .flight-status {
+  margin-bottom: 1rem;
+}
+
+.book .box b {
+  margin-bottom: 5px;
+}
+
+.book .box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.book .box form a {
+  height: 1.5rem;
+  width: 10rem;
+  padding: 10px;
+  color: black;
+  background-color: yellow;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1rem; /* Add margin-top to space out from other elements */
+}
+
+.book .box form a:active {
+  background-color: rgb(200, 200, 0);
+}
+
+.book .box form .pax-count {
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  gap: 4rem;
+}
+
+.book .box form .pax-count .eco .head1 ,
+.book .box form .pax-count .biz .head2 ,
+.book .box form .pax-count .firstclass .head3 {
+  width: 7.7rem;
+}
+
+.book .box form .pax-count .eco .eco-count,
+.book .box form .pax-count .biz .biz-count {
+  margin-left: 1rem;
+}
+
+.book .box form .pax-count .eco .eco-count,
+.book .box form .pax-count .biz .biz-count,
+.book .box form .pax-count .firstclass .first-count {
+  height: 2rem;
+  width: 5.3rem;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 5px 0 gray;
+  display: flex;
+  flex-direction: row;
+}
+
+.book .box form .pax-count .eco .eco-count p,
+.book .box form .pax-count .biz .biz-count p,
+.book .box form .pax-count .firstclass .first-count p {
+  margin: 0;
+  padding: 4px;
+  width: 15px;
+}
+
+.book .box form .pax-count .eco .eco-count button,
+.book .box form .pax-count .biz .biz-count button,
+.book .box form .pax-count .firstclass .first-count button {
+  border: 0;
+  outline: 0;
+  margin: 1px;
+  padding: 8px;
+  width: 2rem;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+}
+
+.book .box form .pax-count .eco .eco-count button:active,
+.book .box form .pax-count .biz .biz-count button:active,
+.book .box form .pax-count .firstclass .first-count button:active {
+  background-color: gray;
+  color: white;
+}
+
+.book .footer {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  padding-bottom: 5px;
+  width: 20%;
+  height: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.book .footer .name {
+  color: white;
+}
+
+.book .footer .links .fb {
+  color: rgb(120, 221, 255);
+}
+
+.book .footer .links .insta {
+  color: pink;
+}
+
+.book .footer .links .x {
+  color: black;
+}
+
+@media only screen and (max-width:768px) {
+  .book .box .date form .input-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .book .box .date form .input-container .frombox .Finput, 
+  .book .box .date form .input-container .tobox .Tinput {
+    width: 10rem;
+    margin: 10px;
+  } 
+}
+
+@media only screen and (max-width:650px) {
+  .book .box .date form .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book .box .date form .input-container .frombox .Finput, 
+  .book .box .date form .input-container .tobox .Tinput {
+    width: 23rem;
+    margin: 10px;
+  } 
+
+  .book .box form .pax-count {
+    gap: 10px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+  }
+
+  .book .box form .pax-count .eco,
+  .book .box form .pax-count .biz,
+  .book .box form .pax-count .firstclass {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .book .box form .pax-count .eco .eco-count,
+  .book .box form .pax-count .biz .biz-count{
+    margin-left: 0;
+  }
+
+  .book .box form .pax-count .eco .eco-count,
+  .book .box form .pax-count .biz .biz-count,
+  .book .box form .pax-count .firstclass .first-count {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .book .box form .pax-count .eco .eco-count p,
+  .book .box form .pax-count .biz .biz-count p,
+  .book .box form .pax-count .firstclass .first-count p {
+    width: auto;
+    padding: 0.5rem;
+    margin: 0;
+    padding: 4px;
+  }
+
+  .book .box form .pax-count .eco .eco-count button,
+  .book .box form .pax-count .biz .biz-count button,
+  .book .box form .pax-count .firstclass .first-count button {
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .book .note {
+    margin: 1rem;
+  }
+
+  .book .footer {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    padding-bottom: 5px;
+    width: 20%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .book .footer .name {
+    padding: 5px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  .book {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .book .box {
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .book .box .date form .input-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book .box .date form .input-container .frombox .Finput, 
+  .book .box .date form .input-container .tobox .Tinput {
+    width: 20rem;
+    margin: 10px;
+  } 
+
+  .book .box .date form .Dtime {
+    height: 6rem;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .book .box .date form .Dtime .date-container {
+    width: 50%;
+  }
+
+  .book .box .date form .Dtime .date-containera {
+    width: 50%;
+  }
+
+  .book .box .date form .Dtime .date-container input {
+    width: 90%;
+  }
+
+  .book .box .date form .Dtime .date-containera input {
+    width: 90%;
+  }
+
+  .book .box form .pax-count {
+    gap: 10px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+  }
+
+  .book .box form .pax-count .eco,
+  .book .box form .pax-count .biz,
+  .book .box form .pax-count .firstclass {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .book .box form .pax-count .eco .eco-count,
+  .book .box form .pax-count .biz .biz-count{
+    margin-left: 0;
+  }
+
+  .book .box form .pax-count .eco .eco-count,
+  .book .box form .pax-count .biz .biz-count,
+  .book .box form .pax-count .firstclass .first-count {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .book .box form .pax-count .eco .eco-count p,
+  .book .box form .pax-count .biz .biz-count p,
+  .book .box form .pax-count .firstclass .first-count p {
+    width: auto;
+    padding: 0.5rem;
+    margin: 0;
+    padding: 4px;
+  }
+
+  .book .box form .pax-count .eco .eco-count button,
+  .book .box form .pax-count .biz .biz-count button,
+  .book .box form .pax-count .firstclass .first-count button {
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .book .note {
+    margin: 1rem;
+  }
+
+  .book .footer {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    padding-bottom: 5px;
+    width: 20%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .book .footer .name {
+    padding: 5px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width:360px){
+  .book {
+    width: 360px;
+    padding-top: 5rem;
+  }
+
+  .book .box {
+    width: 310px;
+    padding: 0;
+  }
+
+  .book .box .date {
+    width: 290px;
+  }
+
+  .book .box .date .Dtime {
+    display: flex;
+    width: 100%;
+    gap: 2rem; /* Adjust spacing between date inputs */
+    align-items: center;
+  }
+}

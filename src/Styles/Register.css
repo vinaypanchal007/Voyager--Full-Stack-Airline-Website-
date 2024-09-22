@@ -1,0 +1,196 @@
+.register {
+    width: 100%;
+    padding-top: 7rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.register .box {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid rgba(105, 10, 10, 0.7);
+    height: auto;
+    width: 20rem;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(105, 10, 10, 0.7);
+}
+
+.register .box .header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.register .box .header h1 {
+    margin: 0;
+}
+
+.register .box .email {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    height: 2.8rem;
+    position: relative;
+}
+
+.register .box .user,
+.register .box .pass {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.register .box .user input,
+.register .box .email input,
+.register .box .pass input {
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: 'Playwrite Is', sans-serif;
+}
+
+.register .box .user .userimg,
+.register .box .email .emailimg,
+.register .box .pass .passimg {
+    padding: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.register .box .toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-family: 'Playwrite Is', sans-serif;
+}
+
+.register .box .forget {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.register .box .forget a {
+    color: red;
+    text-decoration: none;
+}
+
+.register .box .forget a:hover {
+    text-decoration: underline;
+}
+
+.register .box .btn-logic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: 'Playwrite Is', sans-serif;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.register .box .btn-logic:hover {
+    background: white;
+    border: 1px solid red;
+    color: red;
+}
+
+.register .box .btn-logic:active {
+    transform: translateY(1px);
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Media Query for Mobile View less than 360px */
+@media (max-width: 360px) {
+    .register {
+        padding-top: 5rem;
+    }
+
+    .register .box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .register .box .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .register .box .email,
+    .register .box .user,
+    .register .box .pass {
+        height: 2.5rem;
+    }
+
+    .register .box .user input,
+    .register .box .email input,
+    .register .box .pass input {
+        height: 35px;
+        padding-left: 8px;
+    }
+
+    .register .box .user .userimg,
+    .register .box .email .emailimg,
+    .register .box .pass .passimg {
+        height: 20px;
+        width: 20px;
+        padding: 8px;
+    }
+
+    .register .box .toggle-password {
+        right: 5px;
+        font-size: 0.9rem;
+    }
+
+    .register .box .btn-logic {
+        padding: 8px;
+        margin-top: 15px;
+        height: 35px;
+        font-size: 0.9rem;
+        border-radius: 15px;
+    }
+
+    .register .box .forget {
+        font-size: 0.8rem;
+    }
+}

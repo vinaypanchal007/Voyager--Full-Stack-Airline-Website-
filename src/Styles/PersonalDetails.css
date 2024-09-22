@@ -1,0 +1,211 @@
+.pd {
+    margin: 0;
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: auto;     
+    background-color: #f4f4f4; 
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    padding: 4rem;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.pd .box a {
+    margin-top: 1rem;
+    height: auto;
+    padding: 10px;
+    width: 10rem;
+    border-radius: 10px;
+    text-decoration:none;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.pd .box a:hover {
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
+.pd .box a:active {
+    transform: translateY(1px);
+}
+
+.pd .box .Pay {
+    height: 2rem;
+    width: 30%;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    font-size: 15px;
+}
+
+.pd .box .Pay:hover {
+    border: 1px solid orangered;
+    background-color: white;
+    color: orangered;
+    font-size: 15px;
+}
+
+.pd .box .Pay:active {
+    transform: translateY(1px);
+}
+
+.box .head {
+    font-size: 20px;
+}
+
+.title, .name-info, .contact {
+    margin-bottom: 16px;
+}
+
+.head-title {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 16px; /* Add margin if needed */
+}
+
+.first-name {
+    width: 100%; /* Adjust width to fit two fields */
+    padding: 8px;
+    margin-right: 8px; /* Margin between first and last name */
+    margin-bottom: 16px; /* Margin below the input */
+}
+
+.lastname {
+    width: 100%; /* Adjust width to fit two fields */
+    padding: 8px;
+    margin-bottom: 16px; /* Margin below the input */
+}
+
+.email {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px; /* Margin below the input */
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    width: 106%;
+}
+
+.code {
+    width: 30%;
+    margin-right: 8px;
+    height: 2.4rem; /* Match height with input */
+    padding: 0 8px; /* Adjust padding for consistency */
+    font-size: 16px; /* Adjust font size if necessary */
+    box-sizing: border-box; /* Include padding in the height */
+}
+
+.phone input {
+    flex: 1;
+    height: 2.4rem; /* Match height with select */
+    padding: 0 8px; /* Adjust padding for consistency */
+    font-size: 16px; /* Adjust font size if necessary */
+    box-sizing: border-box; /* Include padding in the height */
+}
+
+/* Responsive design for screens up to 768px */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .code {
+        width: 40%;
+    }
+
+    .first-name, .lastname {
+        width: 100%; /* Stack inputs on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
+
+/* Responsive design for screens up to 480px */
+@media (max-width: 480px) {
+    .pd {
+        padding-top: 3rem;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .head {
+        font-size: 18px;
+    }
+
+    .head-title, .first-name, .lastname, .email, .phone input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .code {
+        width: 50%;
+        font-size: 14px;
+        height: 2rem;
+    }
+
+    .phone input {
+        height: 2rem;
+    }
+
+    .Pay {
+        width: 50%;
+        font-size: 14px;
+        height: 1.8rem;
+    }
+}
+
+/* Responsive design for screens up to 360px */
+@media only screen and (max-width: 360px) {
+    .pd {
+        padding-top: 10rem;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .head {
+        font-size: 16px;
+    }
+
+    .head-title, .first-name, .lastname, .email, .phone input {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .code {
+        width: 60%;
+        font-size: 12px;
+        height: 1.8rem;
+    }
+
+    .phone input {
+        height: 1.8rem;
+    }
+
+    .Pay {
+        width: 60%;
+        font-size: 12px;
+        height: 1.6rem;
+    }
+}

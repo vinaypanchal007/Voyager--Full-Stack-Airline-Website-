@@ -1,0 +1,130 @@
+/* Base styles as provided */
+.ff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.route {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.from, .to {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mark {
+  padding-top: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.route-card {
+  margin: 20px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 40px);
+  padding: 20px;
+}
+
+.time-card {
+  margin-top: 20px;
+}
+
+.time-card h4 {
+  margin-bottom: 10px;
+}
+
+.time-card p {
+  margin-bottom: 20px;
+}
+
+.time-card:not(:first-child) {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.book-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for screens down to 360px */
+@media (max-width: 768px) {
+  .route-card {
+    width: calc(100% - 40px); /* Full width with margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .ff {
+    padding-top: 2rem;
+  }
+
+  .from, .to {
+    font-size: 20px;
+  }
+
+  .route-card {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .book-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .route-card {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Reduce margin for small screens */
+  }
+
+  .from, .to {
+    font-size: 18px;
+  }
+
+  .time-card p {
+    margin-bottom: 10px; /* Reduce spacing */
+  }
+
+  .book-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}

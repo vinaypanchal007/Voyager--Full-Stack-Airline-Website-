@@ -1,0 +1,167 @@
+/* General styling */
+.booking-summary-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120vh; /* Ensure it takes full height of viewport */
+    padding-top: 5rem;
+    padding-bottom: 3rem; /* Padding to ensure it doesn't hide behind the navbar */
+  }
+  
+  .summary-box {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Padding inside the box */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .booking-summary-container .summary-box a {
+    text-decoration: none;
+    color: white;
+    height: 1.7rem;
+    border-radius: 10px;
+    width: 6rem;
+    background-color: blue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .booking-summary-container .summary-box a:hover{
+    box-shadow: 0px 0px 1px 1px blue;
+    background-color: white;
+    color: blue;
+  }
+
+  .booking-summary-container .summary-box a:active {
+    transform: translateY(1px);
+  }
+
+  .summary h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .summary-details {
+    margin-bottom: 20px;
+  }
+  
+  .summary-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .summary-item strong {
+    display: inline-block;
+    width: 120px;
+  }
+  
+  .summary-actions {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .proceed-button,
+  .edit-button {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .proceed-button:hover,
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styling */
+  @media only screen and (max-width: 768px) {
+    .summary-box {
+      padding: 15px;
+    }
+  
+    .summary-item strong {
+      width: 100px;
+    }
+  
+    .summary-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .proceed-button,
+    .edit-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .summary-box {
+      padding: 10px;
+    }
+  
+    .summary-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .summary-item strong {
+      width: auto;
+      margin-bottom: 5px;
+    }
+  
+    .summary-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .proceed-button,
+    .edit-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .summary-box {
+      padding: 10px;
+    }
+  
+    .summary-item strong {
+      width: auto;
+      margin-bottom: 5px;
+    }
+  
+    .summary-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .summary-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .proceed-button,
+    .edit-button {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 15px;
+      margin-bottom: 8px;
+    }
+  }
+  

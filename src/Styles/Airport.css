@@ -1,0 +1,87 @@
+.airport-crud {
+    margin: 0;
+    padding-top: 4rem;
+}
+
+.airport-crud .box {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the inputs and button */
+}
+
+.airport-crud .box .airport-input {
+    height: 2rem;
+    width: 100%; /* Make input width responsive */
+    max-width: 30rem; /* Limit maximum width */
+    margin: 10px 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.airport-crud .box .airport-add {
+    width: 100%; /* Make button width responsive */
+    max-width: 4rem; /* Limit maximum width */
+    height: 2rem;
+    margin: 10px 0;
+}
+
+.airport-crud .airport-table {
+    width: 100%; /* Make table width responsive */
+    max-width: 50%; /* Limit maximum width */
+    border-collapse: collapse; /* Collapse borders of adjacent cells */
+    margin: 2rem auto; /* Center the table horizontally with margin */
+}
+
+.airport-crud .airport-table th, .airport-crud .airport-table td {
+    border: 1px solid black; /* Add borders to each cell */
+    padding: 8px; /* Padding for better readability */
+    text-align: center; /* Center the text */
+}
+
+.airport-crud .airport-table .airport-head tr {
+    border-bottom: 1px solid black; /* Add a bottom border to each row */
+    text-align: center;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.airport-crud .airport-table tr {
+    border: 1px solid black; /* Add a border to each row */
+    text-align: center;
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .airport-crud .box {
+        padding: 2rem; /* Reduce padding for smaller screens */
+    }
+
+    .airport-crud .box .airport-input,
+    .airport-crud .box .airport-add {
+        width: 90%; /* Reduce width for smaller screens */
+    }
+
+    .airport-crud .airport-table th,
+    .airport-crud .airport-table td {
+        padding: 6px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .airport-crud .box {
+        padding: 1rem; /* Further reduce padding for very small screens */
+    }
+
+    .airport-crud .box .airport-input,
+    .airport-crud .box .airport-add {
+        width: 100%; /* Make input and button full width on small screens */
+        max-width: none; /* Remove max-width to fit container */
+    }
+
+    .airport-crud .airport-table th,
+    .airport-crud .airport-table td {
+        font-size: 0.8rem; /* Adjust font size for very small screens */
+        padding: 4px; /* Further reduce padding for very small screens */
+    }
+}

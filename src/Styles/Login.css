@@ -1,0 +1,166 @@
+/* Login Section Styles */
+.login {
+    width: auto;
+    padding-top: 7rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login .box {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid rgb(126, 0, 0);
+    height: auto;
+    width: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login .box .header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.login .box .header .name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.login .box .user,
+.login .box .pass {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.login .box .user input,
+.login .box .pass input {
+    height: 40px;
+    width: calc(100% - 40px);
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    font-family: 'Playwrite Is', sans-serif;
+}
+
+.login .box .user .userimg,
+.login .box .pass .passimg {
+    padding: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.login .box .toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-family: 'Playwrite Is', sans-serif;
+}
+
+.login .box .forget {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login .box .forget a {
+    color: red;
+    text-decoration: none;
+}
+
+.login .box .forget a:hover {
+    text-decoration: underline;
+}
+
+.login .box .btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login .box .btn .btn-logic {
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: 'Playwrite IS', sans-serif;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login .box .btn .btn-logic:hover {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+.login .box .btn .btn-logic:active {
+    transform: translateY(1px);
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Additional Styles for 360px width */
+@media (max-width: 360px) {
+    .login {
+        padding-top: 50px;
+        height: auto;
+    }
+    .login .box {
+        width: 300px;
+    }
+    .login .box .header .name {
+        font-size: 0.9rem;
+    }
+    .login .box .user input,
+    .login .box .pass input {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+    .login .box .forget {
+        font-size: 0.8rem;
+    }
+    .login .box .btn .btn-logic {
+        width: 60px;
+        font-size: 0.7rem;
+    }
+}

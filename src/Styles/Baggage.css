@@ -1,0 +1,193 @@
+.L {
+    margin: 0;
+    padding-top: 7rem;
+    width: auto;
+}
+
+.L .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.L .divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: black;
+}
+
+.L .side-by-side {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.L .pic_two {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.L .pic_two .bag1 {
+    width: 100%;
+    height: auto;
+    max-width: 35rem;
+}
+
+.L .box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.L .first_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.L .first_info .mainhead {
+    font-size: 30px;
+    margin: 0;
+    color: rgba(0, 0, 255);
+    padding-top: 10px;
+}
+
+.L .box .head_two {
+    color: rgba(0, 0, 255);
+    text-align: center;
+}
+
+.L .second_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+    padding-bottom: 3rem;
+}
+
+.L .box .bag_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    overflow: hidden; /* This ensures that the border-radius is applied to the entire table */
+}
+
+.L .box .bag_table th, .L .box .bag_table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.L .box .bag_table th {
+    background-color: rgba(0, 0, 255);
+    color: white;
+    font-weight: bold;
+    border-left: 2px solid white;
+}
+
+.L .box .bag_table th:first-child {
+    border-left: none;
+}
+
+.L .box .bag_table .t_one th {
+    background-color: rgba(0, 0, 255);
+    font-weight: bold;
+}
+
+.L .box .bag_table .t_two td:nth-child(1),
+.L .box .bag_table .t_three td:nth-child(1),
+.L .box .bag_table .t_four td:nth-child(1) {
+    font-weight: bold;
+    color: rgba(0, 0, 255);
+}
+
+.L .box .bag_table .t_two td:nth-child(2),
+.L .box .bag_table .t_three td:nth-child(2),
+.L .box .bag_table .t_four td:nth-child(2) {
+    color: black;
+}
+
+.L .box .bag_table .t_two td:nth-child(3),
+.L .box .bag_table .t_three td:nth-child(3),
+.L .box .bag_table .t_four td:nth-child(3) {
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+
+    .L .pic {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    .L .divider {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .L .side-by-side {
+        flex-direction: column;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .L .divider {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .L .side-by-side {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .L .first_info, .L .second_info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .L .first_info .mainhead {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    .L {
+        padding-top: 2rem;
+    }
+    .L .first_info .mainhead {
+        font-size: 20px;
+    }
+    .L .side-by-side {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .L .first_info, .L .second_info {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Anonymous Pro
+- Font Author: Copyright (c) Mark Simonson 2009-2010. All rights reserved.
+- Font Source: https://fonts.gstatic.com/s/anonymouspro/v21/rP2Bp2a15UIB7Un-bOeISG3pLlw89CH98Ko.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

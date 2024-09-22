@@ -1,0 +1,155 @@
+/* Variables for reusability */
+:root {
+  --primary-color: black;
+  --highlight-color: red;
+  --font-family: 'Playwrite Is', sans-serif;
+  --padding-standard: 5rem;
+  --padding-responsive: 2rem;
+  --heading-margin-bottom: 1rem;
+  --section-margin-bottom: 70px;
+  --underline-margin-top: 20px;
+  --image-height: 20rem;
+  --button-height: 40px;
+  --button-width: 20rem;
+  --underline-color: black;
+  --underline-height: 1px;
+}
+
+/* General Styles */
+.Lounge {
+  margin: 0;
+  padding-top: 7rem; /* Adjusted for navbar height */
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Lounge .innerbox {
+  margin: 0;
+  padding-left: var(--padding-standard);
+  padding-right: var(--padding-standard);
+}
+
+.Lounge .innerbox h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+.Lounge .innerbox .header {
+  color: var(--primary-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: var(--section-margin-bottom);
+}
+
+.Lounge .innerbox h2 {
+  color: red;
+}
+
+.Lounge .innerbox h4 {
+  color: red;
+}
+
+.Lounge .underline {
+  width: 100%;
+  height: var(--underline-height);
+  background-color: var(--underline-color);
+}
+
+.Lounge .al h3 {
+  color: red;
+}
+
+.Lounge .al .image,
+.Lounge .al .foodimage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Lounge .al .image .lounge1,
+.Lounge .al .foodimage .food {
+  height: var(--image-height);
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 2px gray;
+}
+
+.Lounge .al .image .imagedesc,
+.Lounge .al .foodimage .food_desc {
+  width: 40%;
+  text-align: justify;
+}
+
+.Lounge .al .foodimage .food_desc {
+  padding-right: 20px;
+}
+
+.Lounge .innerbox .btn-book {
+  margin-top: 2rem;
+  height: var(--button-height);
+  width: var(--button-width);
+}
+
+.Lounge .innerbox .btn-book a {
+  text-decoration: none;
+  color: red;
+  font-family: var(--font-family);
+}
+
+.Lounge .innerbox .btn-book:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.Lounge .innerbox .btn-book:active {
+  transform: translateY(2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Lounge {
+    height: 200vh;;
+
+  }
+  .Lounge .innerbox .header {
+    height: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .Lounge .al .image,
+  .Lounge .al .foodimage {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Lounge .al .image .lounge1,
+  .Lounge .al .foodimage .food {
+    width: 100%;
+    height: auto;
+  }
+
+  .Lounge .al .image .imagedesc,
+  .Lounge .al .foodimage .food_desc {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+  }
+}
+
+/* Underline divider */
+.Lounge .al > *:not(:last-child) {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.Lounge .al > *:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: var(--underline-height);
+  background-color: var(--underline-color);
+}

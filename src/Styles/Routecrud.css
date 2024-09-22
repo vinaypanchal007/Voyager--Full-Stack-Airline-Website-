@@ -1,0 +1,91 @@
+.r {
+    margin: 0;
+    padding-top: 4rem;
+}
+
+.r .rbox {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.r .rbox input {
+    display: flex;
+    height: 2rem;
+    width: 40rem;
+    margin: 10px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.r .rbox .submit-btn {
+    width: 50%;
+    height: 2.5rem;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-self: center; /* Center the button horizontally */
+}
+
+.r .route-table {
+    width: 100%; /* Make table responsive */
+    border-collapse: collapse;
+    margin: 2rem 0; /* Add some margin for spacing */
+    border: 2px solid black; /* Add border to the whole table */
+    text-align: center; /* Center table content */
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+    display: block; /* Allow table to be scrollable */
+}
+
+.r .route-table thead {
+    background-color: #f2f2f2; /* Light background for header */
+}
+
+.r .route-table th, .r .route-table td {
+    border: 1px solid black; /* Border for each cell */
+    padding: 8px;
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+}
+
+.r .route-table .route-head th {
+    text-align: center;
+}
+
+.r .route-table tbody tr {
+    border-bottom: 1px solid black;
+}
+
+.r .route-table tbody tr:last-child {
+    border-bottom: none; /* Remove bottom border from last row */
+}
+
+@media (max-width: 768px) {
+    .r .rbox input, .r .rbox button {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .r .route-table th, .r .route-table td {
+        padding: 6px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .r .rbox input, .r .rbox button {
+        width: 100%; /* Make inputs and buttons full width on very small screens */
+        max-width: none; /* Remove max-width to fit container */
+    }
+
+    .r .route-table {
+        width: 100%;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        display: block; /* Make the table block-level to enable scrolling */
+    }
+
+    .r .route-table th, .r .route-table td {
+        font-size: 0.8rem; /* Adjust font size for very small screens */
+        padding: 4px; /* Adjust padding for very small screens */
+    }
+}
